@@ -1,0 +1,8 @@
+{
+  "title": "实操与部署指南",
+  "icon": "Workflow",
+  "pages": [
+    "obsidian-sync-guide",
+    "vercel-deploy-guide"
+  ]
+}

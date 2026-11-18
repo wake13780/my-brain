@@ -1,0 +1,12 @@
+{
+  "title": "知识星系",
+  "pages": [
+    "index",
+    "---核心星系---",
+    "ai",
+    "engineering",
+    "thinking",
+    "---实操指南---",
+    "guides"
+  ]
+}

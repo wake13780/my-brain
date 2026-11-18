@@ -1,13 +1,53 @@
 ---
-title: Hello World
-description: Your first document
+title: 知识库概览 · 全局星图
+description: 欢迎来到 My Brain 赛博外脑知识库。这里记录着技术沉淀、工程架构、AI 探索与认知进化。
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+欢迎来到 **My Brain** 数字化第二大脑。这里是个人认知体系、深度思考与工程实践的集聚地。
 
-## What is Next?
+知识库采用 **本地优先（Local-First）** 理念构建，所有笔记均以纯粹的 Markdown 形式保存在本地，通过 Next.js 与 Fumadocs 自动编译为现代化极客交互界面。
+
+```mermaid
+graph LR
+    A[🧠 输入端: 灵感/论文/工程实践] --> B[📝 Obsidian: 卡片笔记与双链沉淀]
+    B --> C[⚙️ Next.js + Fumadocs: 赛博外脑渲染引擎]
+    C --> D[🌐 Vercel/Cloudflare: 全球 CDN 实时在线]
+```
+
+---
+
+## 🌌 知识星系导航
+
+知识库划分为三大核心知识星系及一套完整的写作与部署指南：
 
 <Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
+  <Card
+    title="🤖 AI 与前沿探索"
+    description="LLM 大模型原理、自主 Agent 智能体架构、Prompt 上下文工程及学术论文研读。"
+    href="/docs/ai"
+  />
+  <Card
+    title="💻 系统架构与全栈工程"
+    description="现代 Web 栈选型、高性能分布式架构、Clean Architecture 与可靠性设计准则。"
+    href="/docs/engineering"
+  />
+  <Card
+    title="🧠 认知模型与第二大脑"
+    description="第一性原理、系统动力学、卡片盒笔记法（Zettelkasten）与个人思维演进模型。"
+    href="/docs/thinking"
+  />
+  <Card
+    title="⚡ 实操与部署指南"
+    description="如何直接使用 Obsidian 联动无缝写作，以及如何 3 分钟免费发布到全球公网。"
+    href="/docs/guides/obsidian-sync-guide"
+  />
 </Cards>
+
+---
+
+## ⚡ 极客交互特性
+
+- **全局快捷搜索**：在任意页面按下 `Ctrl + K`（Mac 上为 `Cmd + K`）即可秒级呼出全局模糊搜索窗口。
+- **自动目录与滚动高亮**：右侧自动生成精准的多级标题目录（TOC），随阅读进度平滑滚动高亮。
+- **代码块语法高亮**：原生支持 50+ 编程语言的语法染色与一键复制。
+- **完全开源与私有**：代码和文章 100% 掌握在自己手中，不受任何封闭笔记平台的格式限制。
