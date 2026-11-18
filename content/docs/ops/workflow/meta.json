@@ -1,0 +1,15 @@
+{
+  "title": "五、IT 流程与其他",
+  "icon": "Workflow",
+  "pages": [
+    "index",
+    "asset-onboarding",
+    "asset-offboarding",
+    "office-wifi",
+    "lock-password",
+    "mac-smb-connect",
+    "shared-folder-user-sop",
+    "multi-credential-smb",
+    "smb-guest-auth-fix"
+  ]
+}

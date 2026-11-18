@@ -1,0 +1,58 @@
+---
+title: 办公外设与打印运维总览
+description: 覆盖网络打印机、网络 SMB 扫描、钉钉云打印、会议投屏、局域网共享及 Print Spooler 崩溃修复。
+---
+
+企业办公外设具有高频次、易冲突、环境异构（Windows/Mac 混杂）等特性。本章节整理了外设领域的核心实操与排障 SOP。
+
+---
+
+## 篇目列表
+
+<Cards>
+  <Card
+    title="SMB 网络扫描至个人电脑"
+    description="在电脑创建 Scan 共享文件夹，并在打印机 Web 后台配置自动分发。"
+    href="/docs/ops/printer/printer-scanner-smb"
+  />
+  <Card
+    title="钉钉智能云打印配置"
+    description="安装云打印插件驱动并在 WPS/Office 中一键绑定各楼层工位打印机。"
+    href="/docs/ops/printer/dingtalk-printer"
+  />
+  <Card
+    title="Mac 苹果电脑网络打印机连接"
+    description="通过 Socket/IP 协议在 macOS 快速添加企业多功能复合机。"
+    href="/docs/ops/printer/mac-printer"
+  />
+  <Card
+    title="身份证证件双面复印规范"
+    description="A4 单面合并 2 张原稿的标准化复印摆放步骤。"
+    href="/docs/ops/printer/id-copy-guide"
+  />
+  <Card
+    title="笔记本会议投屏指南"
+    description="有线 HDMI 扩展屏设置（Win+P）与无线 Miracast（Win+K）投屏步骤。"
+    href="/docs/ops/printer/screen-projection"
+  />
+  <Card
+    title="局域网共享文件夹配置与连接"
+    description="Windows 共享权限分配、凭据管理器配置及 IP 挂载全套流程。"
+    href="/docs/ops/printer/shared-folder-config"
+  />
+  <Card
+    title="Win11 24H2 扩展错误修复"
+    description="通过 PowerShell 关闭 SMB 强制签名，修复系统升级后的共享连不上问题。"
+    href="/docs/ops/printer/smb-signature-fix"
+  />
+  <Card
+    title="条码/标签打印机排障"
+    description="解决管家误拦截打印以及热敏标签打印模糊的混色设置。"
+    href="/docs/ops/printer/label-printer-troubleshoot"
+  />
+  <Card
+    title="Print Spooler 崩溃深度修复 SOP"
+    description="针对 spoolsv.exe 与 localspl.dll 崩溃的 Local Port 本地端口绕过核心修复法。"
+    href="/docs/ops/printer/print-spooler-fix"
+  />
+</Cards>

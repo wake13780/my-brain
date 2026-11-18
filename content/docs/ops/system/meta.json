@@ -1,0 +1,13 @@
+{
+  "title": "二、系统与系统设置",
+  "icon": "Laptop",
+  "pages": [
+    "index",
+    "windows-activation",
+    "c-drive-expansion",
+    "auto-power-on-off",
+    "pc-performance-tuning",
+    "pc-reset-guide",
+    "driver-install-guide"
+  ]
+}

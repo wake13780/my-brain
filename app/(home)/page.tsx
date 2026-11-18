@@ -1,17 +1,19 @@
 import Link from 'next/link';
 import {
-  Brain,
   Sparkles,
-  Cpu,
-  Terminal,
-  BookOpen,
+  Network,
+  Laptop,
+  Printer,
+  AppWindow,
+  Workflow,
   ArrowRight,
   Search,
   Zap,
   Layers,
-  FileCode2,
-  Workflow,
-  Globe2,
+  BookOpen,
+  ShieldCheck,
+  FileText,
+  UserCheck,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -22,52 +24,51 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-radial-gradient pointer-events-none" />
       
       {/* Subtle Glowing Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-purple-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-cyan-500/10 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-purple-500/10 rounded-full blur-[150px] pointer-events-none" />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-20 w-full">
         {/* Header Badge */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 text-xs font-mono tracking-wide shadow-lg shadow-cyan-950/50 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 text-xs font-mono tracking-wide shadow-lg shadow-cyan-950/50 backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            <span>NEURAL VAULT // V2.0 ONLINE</span>
+            <span>IT OPERATIONS MANUAL // SOP 合集</span>
             <span className="text-cyan-500/60">|</span>
-            <span className="text-neutral-400">100% LOCAL-FIRST</span>
+            <span className="text-neutral-400">编写人：许恩民</span>
           </div>
         </div>
 
         {/* Hero Headline */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">
-            构建你的
+            企业 IT 运维
             <span className="block mt-2 bg-gradient-to-r from-cyan-400 via-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">
-              赛博外脑知识库
+              标准化操作知识库 (SOP)
             </span>
           </h1>
           <p className="text-base sm:text-lg text-neutral-400 leading-relaxed font-normal max-w-2xl mx-auto">
-            数字化第二大脑 · 深度知识星系 · 认知模型与工程沉淀。
-            本地极速 Markdown/Obsidian 零摩擦写作，全球全自动云端部署。
+            覆盖网络与 VPN 调优、Windows 系统深度维护、打印机与 SMB 共享排障、办公软件安全治理与资产领用流程。
           </p>
         </div>
 
         {/* Hero Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
           <Link
-            href="/docs"
+            href="/docs/ops"
             className="group relative inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-medium text-sm text-neutral-900 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-cyan-200 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:-translate-y-0.5"
           >
             <Sparkles className="w-4 h-4 text-cyan-950" />
-            <span>进入知识库</span>
+            <span>查阅 IT 运维手册 (SOP)</span>
             <ArrowRight className="w-4 h-4 text-cyan-950 group-hover:translate-x-1 transition-transform" />
           </Link>
 
           <Link
-            href="/docs/guides/obsidian-sync-guide"
+            href="/docs/ops/printer/print-spooler-fix"
             className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-medium text-sm text-neutral-300 bg-neutral-900/80 border border-neutral-800 hover:border-neutral-700 hover:text-white transition-all backdrop-blur-md"
           >
-            <BookOpen className="w-4 h-4 text-neutral-400" />
-            <span>Obsidian 写作流</span>
+            <ShieldCheck className="w-4 h-4 text-cyan-400" />
+            <span>Print Spooler 崩溃排障</span>
           </Link>
 
           <div className="hidden sm:inline-flex items-center gap-2 px-4 py-3.5 rounded-xl text-xs font-mono text-neutral-400 bg-neutral-950/60 border border-neutral-800/80">
@@ -86,10 +87,10 @@ export default function HomePage() {
         {/* Quick Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-20">
           {[
-            { label: '写作响应延迟', val: '0ms', desc: '本地文件直读' },
-            { label: 'Obsidian 语法支持', val: '100%', desc: '原生 Markdown / MDX' },
-            { label: '知识节点组织', val: '∞', desc: '双向链接与目录树' },
-            { label: '全球 CDN 托管', val: 'FREE', desc: 'Vercel / Cloudflare' },
+            { label: 'SOP 规范总篇目', val: '28+ 篇', desc: '全流程标准化指引' },
+            { label: '高频故障秒级排障', val: '0ms', desc: 'Ctrl+K 全文模糊搜索' },
+            { label: '覆盖业务部门', val: '10+ 个', desc: '运营/供应链/品质/财务等' },
+            { label: '支持操作系统', val: 'Win/Mac', desc: 'Windows 11/10 & macOS' },
           ].map((item, idx) => (
             <div
               key={idx}
@@ -104,136 +105,151 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* Bento Grid: Knowledge Base Categorization */}
+        {/* Bento Grid: 5 Core Chapters of IT Ops */}
         <div className="mb-20">
           <div className="flex flex-col items-center mb-10 text-center">
             <div className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">
               <Layers className="w-3.5 h-3.5" />
-              <span>KNOWLEDGE CONSTELLATION</span>
+              <span>FIVE CORE IT MODULES</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              便当盒知识矩阵 · 四大核心星系
+              SOP 标准化运维矩阵 · 五大核心模块
             </h2>
             <p className="text-sm text-neutral-400 mt-2 max-w-lg">
-              按认知维度构建分层体系，沉淀高价值经验与体系化知识。
+              由 IT 工程师许恩民编制整理，将零散经验提炼为结构化 SOP。
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {/* Bento Card 1: AI & Frontier */}
+            {/* Bento Card 1: Network & VPN */}
             <Link
-              href="/docs/ai"
+              href="/docs/ops/network"
               className="md:col-span-2 glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Cpu className="w-36 h-36 text-cyan-400" />
+                <Network className="w-36 h-36 text-cyan-400" />
               </div>
               <div className="relative z-10 flex flex-col justify-between h-full">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="p-2.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 inline-block">
-                      <Cpu className="w-5 h-5" />
+                      <Network className="w-5 h-5" />
                     </span>
                     <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-neutral-800 text-neutral-300 border border-neutral-700">
-                      FRONTIER AI
+                      CHAPTER 01
                     </span>
                   </div>
                   <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">
-                    AI 与前沿探索 (Frontier Intelligence)
+                    一、网络与 VPN 运维支持
                   </h3>
                   <p className="text-sm text-neutral-400 max-w-md leading-relaxed mb-6">
-                    涵盖大语言模型（LLM）底层架构、自主 Agent 智能体系统设计、Prompt & 上下文工程，以及前沿学术论文研读与复现。
+                    v2rayN / Flclash / Clash Verge 客户端使用规范、内网与产品中心 VPN 静态 IP 快速切换、钉钉连接 VPN 避让卡顿及网络逐级排障流水线。
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 group-hover:translate-x-1 transition-transform">
-                  <span>浏览 AI 星系</span>
+                  <span>进入网络模块</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
             </Link>
 
-            {/* Bento Card 2: Engineering */}
+            {/* Bento Card 2: System */}
             <Link
-              href="/docs/engineering"
+              href="/docs/ops/system"
               className="glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="p-2.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 inline-block">
-                  <Terminal className="w-5 h-5" />
+                  <Laptop className="w-5 h-5" />
                 </span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-neutral-800 text-neutral-300 border border-neutral-700">
-                  SYSTEMS
+                  CHAPTER 02
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white group-hover:text-purple-300 transition-colors mb-2">
-                系统架构与工程
+                二、系统与系统设置
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                现代 Web 栈选型、高并发分布式系统、整洁代码（Clean Architecture）与可维护性设计准则。
+                Windows 11/10 数字权利永久激活、C 盘空间扩容、主板 BIOS 自动开机、任务计划定时关机及硬件驱动精准匹配。
               </p>
               <div className="flex items-center gap-2 text-xs font-mono text-purple-400 group-hover:translate-x-1 transition-transform">
-                <span>进入工程体系</span>
+                <span>进入系统模块</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
             </Link>
 
-            {/* Bento Card 3: Mental Models */}
+            {/* Bento Card 3: Printing & Peripherals */}
             <Link
-              href="/docs/thinking"
+              href="/docs/ops/printer"
               className="glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 inline-block">
-                  <Brain className="w-5 h-5" />
+                  <Printer className="w-5 h-5" />
                 </span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-neutral-800 text-neutral-300 border border-neutral-700">
-                  COGNITION
+                  CHAPTER 03
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors mb-2">
-                认知模型与第二大脑
+                三、办公外设与打印支持
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-                第一性原理、系统动力学、卡片盒笔记法（Zettelkasten）与个人认知操作系统演进。
+                SMB 扫描至网络文件夹、钉钉云打印、Mac 连接打印机、会议室有线无线投屏及 Print Spooler 崩溃 Local Port 终极修复法。
               </p>
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 group-hover:translate-x-1 transition-transform">
-                <span>探索思维框架</span>
+                <span>进入外设模块</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
             </Link>
 
-            {/* Bento Card 4: Workflow & Guides */}
+            {/* Bento Card 4: Software & Browser */}
             <Link
-              href="/docs/guides/obsidian-sync-guide"
-              className="md:col-span-2 glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
+              href="/docs/ops/software"
+              className="glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <span className="p-2.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 inline-block">
+                  <AppWindow className="w-5 h-5" />
+                </span>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-neutral-800 text-neutral-300 border border-neutral-700">
+                  CHAPTER 04
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors mb-2">
+                四、软件与浏览器
+              </h3>
+              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+                防捆绑软件安装规范、Geek 强力卸载与注册表清理、Chrome 书签迁移及钉钉多部门表格权限隔离。
+              </p>
+              <div className="flex items-center gap-2 text-xs font-mono text-blue-400 group-hover:translate-x-1 transition-transform">
+                <span>进入软件模块</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </div>
+            </Link>
+
+            {/* Bento Card 5: IT Workflow & Assets */}
+            <Link
+              href="/docs/ops/workflow"
+              className="glass-panel glow-box p-7 rounded-2xl group block relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 inline-block">
                   <Workflow className="w-5 h-5" />
                 </span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-neutral-800 text-neutral-300 border border-neutral-700">
-                  WORKFLOW
+                  CHAPTER 05
                 </span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors mb-2">
-                    Obsidian 本地无缝写作协同
-                  </h3>
-                  <p className="text-sm text-neutral-400 leading-relaxed mb-4">
-                    将此仓库直接用作 Obsidian Vault。所写即所得，支持双向链接、代码高亮、公式解析与图表展示。
-                  </p>
-                </div>
-                <div className="bg-neutral-950/70 rounded-xl p-4 border border-neutral-800 font-mono text-xs text-neutral-300 flex flex-col justify-center space-y-2">
-                  <div className="text-cyan-400 flex items-center gap-1.5">
-                    <FileCode2 className="w-3.5 h-3.5" />
-                    <span>content/docs/</span>
-                  </div>
-                  <div className="text-neutral-500">├── ai/</div>
-                  <div className="text-neutral-500">├── engineering/</div>
-                  <div className="text-neutral-500">└── thinking/</div>
-                  <div className="text-emerald-400 text-[11px] mt-1">✔ 实时热更新渲染</div>
-                </div>
+              <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors mb-2">
+                五、IT 流程与其他
+              </h3>
+              <p className="text-sm text-neutral-400 leading-relaxed mb-6">
+                新员工入职设备领用审批流、离职资产批量退还、办公室 WiFi 密码、Mac 挂载 SMB 及双凭证访问共享技巧。
+              </p>
+              <div className="flex items-center gap-2 text-xs font-mono text-amber-400 group-hover:translate-x-1 transition-transform">
+                <span>进入流程模块</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </div>
             </Link>
           </div>
@@ -246,33 +262,33 @@ export default function HomePage() {
               <Zap className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white mb-1">毫秒级极客体验</h4>
+              <h4 className="text-sm font-semibold text-white mb-1">极速索引与模糊检索</h4>
               <p className="text-xs text-neutral-400 leading-relaxed">
-                内置 Fumadocs 引擎，基于 Turbopack 编译，支持全局快捷键快速搜索与即时目录联动。
+                按 Ctrl+K 瞬间呼出检索框，输入任何报错代码或故障关键词即可直达精准 SOP。
               </p>
             </div>
           </div>
 
           <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
             <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 mt-1">
-              <Globe2 className="w-4 h-4" />
+              <BookOpen className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white mb-1">一键全球免费发布</h4>
+              <h4 className="text-sm font-semibold text-white mb-1">Obsidian 本地无缝写作</h4>
               <p className="text-xs text-neutral-400 leading-relaxed">
-                配合 Vercel 或 Cloudflare Pages，Git 提交即可全自动触发构建与边缘 CDN 部署。
+                用 Obsidian 直接打开 content/docs 目录，写完保存即可自动热更新同步。
               </p>
             </div>
           </div>
 
           <div className="flex items-start gap-4 p-5 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
             <div className="p-2 rounded-lg bg-fuchsia-500/10 text-fuchsia-400 mt-1">
-              <Sparkles className="w-4 h-4" />
+              <UserCheck className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white mb-1">极度纯净且自控</h4>
+              <h4 className="text-sm font-semibold text-white mb-1">团队与全员规范共享</h4>
               <p className="text-xs text-neutral-400 leading-relaxed">
-                所有文章全为本地纯文本 Markdown 文件，无数据库依赖，永久拥有完全数据自主权。
+                部署上线后可通过固定公网域名分享给全公司员工自主查阅，大幅减少重复沟通成本。
               </p>
             </div>
           </div>
@@ -284,10 +300,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            <span className="font-mono text-neutral-400">All Neural Systems Operational</span>
+            <span className="font-mono text-neutral-400">IT Operations Manual · All Systems Normal</span>
           </div>
           <div>
-            My Brain · Powered by Next.js & Fumadocs · Designed with Future Tech Aesthetic
+            编制人：许恩民 · 编制日期：2026年05月16日 · Powered by Next.js & Fumadocs
           </div>
         </div>
       </footer>

@@ -1,0 +1,22 @@
+---
+title: Windows 11 24H2 共享文件扩展错误修复
+description: 针对 Win11 24H2 默认强制开启 SMB 签名导致无法连接旧版 NAS 或局域网共享的解决办法。
+---
+
+在微软推送 **Windows 11 24H2** 大版本更新后，系统默认策略强制要求客户端对所有出站 SMB 流量进行数字签名（SMB Signing）。如果局域网共享服务器或旧款打印机不支持签名，客户端访问时会直接弹出“扩展错误”或拒绝连接。
+
+---
+
+## 解决方案：禁用 SMB 客户端与服务端签名
+
+1. 右键左下角「开始」图标（或按 `Win + X`）；
+2. 选择 **「终端管理员」**（或 PowerShell 管理员身份）；
+3. 依次复制并运行以下两条 PowerShell 命令：
+
+```powershell
+Set-SmbClientConfiguration -RequireSecuritySignature $false -Force
+Set-SmbServerConfiguration -RequireSecuritySignature $false -Force
+```
+
+4. 命令执行完成后，**重启计算机**；
+5. 重启后再次按 `Win + R` 输入 `\\IP` 即可顺畅连接局域网共享。

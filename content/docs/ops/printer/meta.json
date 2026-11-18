@@ -1,0 +1,17 @@
+{
+  "title": "三、办公外设与打印",
+  "icon": "Printer",
+  "pages": [
+    "index",
+    "printer-scanner-smb",
+    "dingtalk-printer",
+    "mac-printer",
+    "id-copy-guide",
+    "screen-projection",
+    "shared-folder-config",
+    "shared-folder-connect",
+    "smb-signature-fix",
+    "label-printer-troubleshoot",
+    "print-spooler-fix"
+  ]
+}

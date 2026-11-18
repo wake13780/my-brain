@@ -1,0 +1,13 @@
+{
+  "title": "IT 运维操作手册",
+  "icon": "Wrench",
+  "pages": [
+    "index",
+    "---章节目录---",
+    "network",
+    "system",
+    "printer",
+    "software",
+    "workflow"
+  ]
+}

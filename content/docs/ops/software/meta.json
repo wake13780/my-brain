@@ -1,0 +1,13 @@
+{
+  "title": "四、软件与浏览器",
+  "icon": "AppWindow",
+  "pages": [
+    "index",
+    "software-install-guide",
+    "geek-uninstaller",
+    "chrome-bookmarks",
+    "chrome-extensions",
+    "browser-proxy-fix",
+    "dingtalk-sheet-permission"
+  ]
+}

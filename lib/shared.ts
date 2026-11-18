@@ -1,11 +1,11 @@
 import { createGetUrl } from 'fumadocs-core/source';
 
-export const appName = 'My Brain';
+export const appName = 'IT 运维手册 · My Brain';
 export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';
 
 export const gitConfig = {
-  user: 'your-username',
+  user: 'xuenmin',
   repo: 'my-brain',
   branch: 'main',
 };
