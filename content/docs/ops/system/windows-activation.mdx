@@ -9,20 +9,23 @@ description: 基于开源 Microsoft-Activation-Scripts (MAS) 的正版数字许�
 
 ## 操作步骤
 
-1. 右键点击桌面左下角的「开始」图标（或按快捷键 `Win + X`）；
-2. 在弹出的高级菜单中，选择 **「终端管理员 (Terminal Admin)」** 或 **「Windows PowerShell (管理员)」**；
-3. 在命令窗口中直接粘贴以下官方激活命令并回车：
+1. 按键盘快捷键 `Win + X`，在弹出的右键菜单中选择 **「终端管理员(A)」**：
 
-```powershell
-irm https://get.activated.win | iex
-```
+![Win+X选择终端管理员](/images/ops/image20.png)
 
-4. 等待数秒加载出激活菜单控制台：
-   - 看到菜单选项后，在键盘上直接按下数字键 **`1`**（选择 **`[1] HWID - Windows Permanent`**）；
-5. 系统将自动连接微软授权服务器进行数字许可证注入，等待约 1~2 分钟；
-6. 界面显示高亮绿色的：
+2. 在命令窗口中输入以下命令并回车：
+   ```powershell
+   irm https://get.activated.win | iex
+   ```
+3. 弹出控制台菜单后，**只需按键盘上的数字键 `1`**（选择 `[1] HWID - Windows Permanent`）：
+
+![选择数字1自动激活](/images/ops/image21.png)
+
+4. 等待 1~2 分钟，屏幕显示高亮绿色文字提示即表示永久激活成功：
    ```
    Windows 11 专业版 is permanently activated with a digital license.
    ```
-   即代表永久激活成功！
-7. 按键盘任意键退出该激活界面即可。
+
+![显示激活成功界面](/images/ops/image22.png)
+
+5. 然后按键盘任意键退出该界面即可。
