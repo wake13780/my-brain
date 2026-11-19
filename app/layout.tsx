@@ -10,17 +10,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://my-brain.vercel.app'),
   title: {
-    default: 'My Brain · 赛博外脑知识库',
+    default: 'IT 运维手册 · My Brain',
     template: '%s | My Brain',
   },
-  description: '第二大脑 · 深度知识库 · 思考星图 · 现代工程实践',
+  description: '企业 IT 运维标准化知识库 (SOP) · 编制人：许恩民',
 };
 
 export default function Layout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="zh-CN" className={inter.className} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen bg-[#070709] text-neutral-100">
-        <RootProvider>{children}</RootProvider>
+      <body className="flex flex-col min-h-screen">
+        <RootProvider
+          theme={{
+            defaultTheme: 'dark',
+          }}
+        >
+          {children}
+        </RootProvider>
       </body>
     </html>
   );
