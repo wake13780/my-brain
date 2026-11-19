@@ -5,7 +5,7 @@ export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';
 
 export const gitConfig = {
-  user: 'xuenmin',
+  user: 'wake13780',
   repo: 'my-brain',
   branch: 'main',
 };
