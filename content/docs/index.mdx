@@ -1,53 +1,53 @@
 ---
-title: 知识库概览 · 全局星图
-description: 欢迎来到 My Brain 赛博外脑知识库。这里记录着技术沉淀、工程架构、AI 探索与认知进化。
+title: IT 运维知识库概览 · 全局导航
+description: 欢迎来到企业 IT 运维标准化作业知识库（SOP）。编制人：许恩民。
 ---
 
-欢迎来到 **My Brain** 数字化第二大脑。这里是个人认知体系、深度思考与工程实践的集聚地。
-
-知识库采用 **本地优先（Local-First）** 理念构建，所有笔记均以纯粹的 Markdown 形式保存在本地，通过 Next.js 与 Fumadocs 自动编译为现代化极客交互界面。
+欢迎查阅 **企业 IT 运维标准化知识库 (SOP 合集)**。本手册由 **许恩民** 编写整理，旨在规范企业内部桌面运维、网络支持、外设管理与 IT 服务流程，提供高频故障的标准化解决路径。
 
 ```mermaid
 graph LR
-    A[🧠 输入端: 灵感/论文/工程实践] --> B[📝 Obsidian: 卡片笔记与双链沉淀]
-    B --> C[⚙️ Next.js + Fumadocs: 赛博外脑渲染引擎]
-    C --> D[🌐 Vercel/Cloudflare: 全球 CDN 实时在线]
+    A[🧑‍💻 员工报障 / 常见 IT 需求] --> B[🔍 知识库快速检索 / SOP 指引]
+    B --> C[⚙️ 标准化流程操作与修复]
+    C --> D[✅ 故障高效闭环 / 资产规范管理]
 ```
 
 ---
 
-## 🌌 知识星系导航
-
-知识库划分为三大核心知识星系及一套完整的写作与部署指南：
+## 📚 核心运维章节导航
 
 <Cards>
   <Card
-    title="🤖 AI 与前沿探索"
-    description="LLM 大模型原理、自主 Agent 智能体架构、Prompt 上下文工程及学术论文研读。"
-    href="/docs/ai"
+    title="🌐 一、网络与 VPN 支持"
+    description="VPN 客户端配置、内网与 VPN 路由切换、钉钉网络卡顿优化、网络连通性排查。"
+    href="/docs/ops/network"
   />
   <Card
-    title="💻 系统架构与全栈工程"
-    description="现代 Web 栈选型、高性能分布式架构、Clean Architecture 与可靠性设计准则。"
-    href="/docs/engineering"
+    title="⚙️ 二、系统与系统设置"
+    description="Windows 系统激活、C 盘安全扩容、BIOS 自动开机与计划任务、性能优化与重置。"
+    href="/docs/ops/system"
   />
   <Card
-    title="🧠 认知模型与第二大脑"
-    description="第一性原理、系统动力学、卡片盒笔记法（Zettelkasten）与个人思维演进模型。"
-    href="/docs/thinking"
+    title="🖨️ 三、办公外设与打印"
+    description="SMB 扫描配置、钉钉云打印、Mac 打印机连接、Print Spooler 崩溃深度修复 SOP。"
+    href="/docs/ops/printer"
   />
   <Card
-    title="⚡ 实操与部署指南"
-    description="如何直接使用 Obsidian 联动无缝写作，以及如何 3 分钟免费发布到全球公网。"
-    href="/docs/guides/obsidian-sync-guide"
+    title="💻 四、软件与浏览器"
+    description="软件安装防捆绑规范、Geek 深度卸载、Chrome 书签迁移、钉钉表格权限隔离。"
+    href="/docs/ops/software"
+  />
+  <Card
+    title="📋 五、IT 流程与其他"
+    description="入职设备领用审批、离职资产退还、办公室 WiFi 密码、共享双凭证与来宾访问修复。"
+    href="/docs/ops/workflow"
   />
 </Cards>
 
 ---
 
-## ⚡ 极客交互特性
+## ⚡ 极客使用技巧
 
-- **全局快捷搜索**：在任意页面按下 `Ctrl + K`（Mac 上为 `Cmd + K`）即可秒级呼出全局模糊搜索窗口。
+- **全局快捷搜索**：在任意页面按下 `Ctrl + K`（Mac 上为 `Cmd + K`）即可秒级呼出全局模糊搜索窗口，输入任何报错代码或故障关键词即可直达对应步骤。
 - **自动目录与滚动高亮**：右侧自动生成精准的多级标题目录（TOC），随阅读进度平滑滚动高亮。
-- **代码块语法高亮**：原生支持 50+ 编程语言的语法染色与一键复制。
-- **完全开源与私有**：代码和文章 100% 掌握在自己手中，不受任何封闭笔记平台的格式限制。
+- **高清图文对照**：每一篇 SOP 均配有实际操作界面的高清截图标注与参数示范。
